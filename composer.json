@@ -1,0 +1,17 @@
+{
+    "name": "xoxoday/games",
+    "description": "This package will be used to redirect to easy promo games and process the result from the webhook.",
+    "autoload": {
+        "psr-4": {
+            "Xoxoday\\Games\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xoxoday\\Games\\ConsumerGamesServiceProvider"
+            ]
+        }
+    }
+}
