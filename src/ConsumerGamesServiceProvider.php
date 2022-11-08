@@ -26,5 +26,9 @@ class ConsumerGamesServiceProvider extends ServiceProvider
         
         $this->loadMigrationsFrom(__DIR__.'/Database/Migrations');
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+         // Publish assets
+         $this->publishes([
+            __DIR__.'/config/xogames.php' => config_path('xogames.php'),
+          ], 'games_files');
     }
 }
